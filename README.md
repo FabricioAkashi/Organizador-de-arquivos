@@ -10,15 +10,38 @@ Este projeto é um script simple desenvolvido em python com a finalidade de orga
 
 ## 🚀 Como usar
 
-1. **Clone o repositório:**
+1. **Clone este repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/fabricioakashi/organizador-arquivos.git
+   ```
 
-2. **Altere o caminho para pasta alvo**
+2. **Instale o Python** (caso ainda não tenha):
+   - https://www.python.org/downloads/
 
-  No arquivo index.py, edite a variável pasta_alvo com o caminho da pasta que deseja organizar:
+3. **Edite o caminho da pasta a ser organizada:**
 
-  pasta_alvo = r'C:\Users\SeuUsuario\Downloads' 
+   No arquivo `index.py`, modifique a variável `pasta_alvo` com o caminho da sua pasta:
+   ```python
+   pasta_alvo = r'C:\Users\SeuUsuario\Downloads'
+   ```
 
-3. **Execute o script**
+4. **Execute o script:**
+   ```bash
    python index.py
+   ```
+
+5. Os arquivos serão movidos automaticamente para pastas como:
+   - `Imagens`
+   - `Documentos`
+   - `Planilhas`
+   - `Vídeos`
+   - `Executáveis`
+   - `Compactados`
+   - `Outros`
+
+---
+
+## 🧰 Tecnologias utilizadas
+
+- Python 3.x
+- Bibliotecas padrão: `os`, `shutil`
